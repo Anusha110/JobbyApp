@@ -7,12 +7,12 @@ import stores from '../../stores'
 import CounterWithToast from './index'
 
 describe('Counter test', () => {
-   it('should test if Counter is rendered or not', () => {
-      const counter = render(
-         <Router>
-            <CounterWithToast counterStore={stores.counterStore} />
-         </Router>
-      )
-      expect(counter).toBeDefined()
-   })
+it('should test if Counter is rendered or not', () => {
+const counter = render(
+<Router>
+<CounterWithToast counterStore={stores.counterStore} />
+</Router>
+)
+expect(counter).toBeDefined()
+})
 })
